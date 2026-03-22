@@ -5,6 +5,13 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 import logging
+import sys
+
+# Add the current directory to sys.path for Vercel deployment
+# This allows 'from routers import ...' to work
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
 
 # Load environment variables
 ROOT_DIR = Path(__file__).parent
