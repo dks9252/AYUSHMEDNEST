@@ -1,0 +1,177 @@
+{
+  "project_name": "AYUSHMEDNEST",
+  "version": "1.0.0",
+  "last_updated": "2026-05-20",
+  "persona": {
+    "identity": "E1: The Anti-AI Designer",
+    "philosophy": "Fusion over Imitation. Clinical Trust meets Ancient Wisdom.",
+    "core_principles": [
+      "No 'Medical Blue' - Use Earth & Sage",
+      "Texture > Flatness (Grain/Paper overlays)",
+      "Bento Grids > Standard Columns",
+      "Manrope > Inter (for headings)"
+    ]
+  },
+  "design_system": {
+    "theme": {
+      "mode": "light",
+      "strategy": "Herbal Clinical",
+      "description": "A foundation of clinical white and soft warm greys, accented by deep herbal greens and earthy wood tones to signify 'Nature-based Medicine'. Avoids sterility."
+    },
+    "colors": {
+      "primary": {
+        "DEFAULT": "#2F5C3E",
+        "foreground": "#FFFFFF",
+        "description": "Deep Herbal Green - Used for primary buttons, active states, and key branding."
+      },
+      "secondary": {
+        "DEFAULT": "#E8F3EA",
+        "foreground": "#2F5C3E",
+        "description": "Pale Mint - Used for secondary buttons, backgrounds of active items."
+      },
+      "accent": {
+        "DEFAULT": "#D4A373",
+        "foreground": "#FFFFFF",
+        "description": "Warm Earth/Wood - Used for 'Ayurveda' specific highlights and warmth."
+      },
+      "background": {
+        "DEFAULT": "#FFFFFF",
+        "alt": "#FAFAF9",
+        "description": "Pure white for content, Warm Stone (#FAFAF9) for page backgrounds."
+      },
+      "text": {
+        "primary": "#1A2F23",
+        "secondary": "#52665B",
+        "description": "Dark Jungle Green instead of pure black for softer contrast."
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Outfit, sans-serif",
+        "body": "Inter, sans-serif",
+        "accent": "Playfair Display, serif"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body": "text-base leading-relaxed text-slate-600"
+      },
+      "rules": [
+        "Headings MUST use 'Outfit'.",
+        "Body text MUST use 'Inter'.",
+        "Use 'Playfair Display' ONLY for editorial quotes or 'Wisdom' sections."
+      ]
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-6 lg:px-8",
+      "section_gap": "py-16 md:py-24",
+      "component_gap": "gap-6 md:gap-8"
+    },
+    "shadows": {
+      "card": "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+      "hover": "0 10px 15px -3px rgba(47, 92, 62, 0.1), 0 4px 6px -2px rgba(47, 92, 62, 0.05)"
+    },
+    "border_radius": {
+      "default": "rounded-xl",
+      "card": "rounded-2xl",
+      "button": "rounded-full"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2F5C3E] text-white hover:bg-[#244A30] rounded-full px-8 py-3 font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5",
+      "secondary": "bg-[#E8F3EA] text-[#2F5C3E] hover:bg-[#D1E5D6] rounded-full px-6 py-2 font-medium transition-all",
+      "outline": "border-2 border-[#2F5C3E] text-[#2F5C3E] hover:bg-[#E8F3EA] rounded-full px-6 py-2 font-medium transition-all"
+    },
+    "cards": {
+      "product": "group relative bg-white rounded-2xl border border-slate-100 p-4 transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-[#2F5C3E]/20",
+      "category": "relative overflow-hidden rounded-2xl aspect-square flex items-center justify-center bg-[#FAFAF9] group cursor-pointer hover:bg-[#E8F3EA] transition-colors",
+      "doctor": "bg-white rounded-2xl border border-slate-100 p-6 flex flex-col items-center text-center transition-all hover:shadow-lg"
+    },
+    "inputs": {
+      "search": "h-12 w-full rounded-full border-slate-200 bg-white px-6 shadow-sm focus:border-[#2F5C3E] focus:ring-[#2F5C3E] transition-all text-lg placeholder:text-slate-400"
+    },
+    "navigation": {
+      "header": "sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60",
+      "link": "text-sm font-medium text-slate-600 transition-colors hover:text-[#2F5C3E]"
+    }
+  },
+  "layout_strategies": {
+    "bento_grid": {
+      "description": "Use for Categories and Features. Asymmetric grid to create visual interest.",
+      "classes": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    },
+    "product_grid": {
+      "description": "High density for listings.",
+      "classes": "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero": {
+        "url": "https://images.unsplash.com/photo-1659352790654-058e9077a4f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxoZWFsdGh5JTIwaW5kaWFuJTIwd2VsbG5lc3N8ZW58MHx8fHwxNzcyOTgwMzYyfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Healthy Indian Family",
+        "usage": "Hero Section Background or Side Image"
+      },
+      "doctor_consult": {
+        "url": "https://images.pexels.com/photos/8376221/pexels-photo-8376221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Online Doctor Consultation",
+        "usage": "Doctor Discovery Section"
+      },
+      "ayurveda_category": {
+        "url": "https://images.unsplash.com/photo-1657984301215-1b5e5a99275e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxheXVydmVkYSUyMGhlcmJzJTIwbWVkaWNpbmUlMjB3ZWxsbmVzc3xlbnwwfHx8fDE3NzI5ODAzNjB8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Ayurveda Herbs",
+        "usage": "Category Card: Ayurveda"
+      },
+      "homeopathy_category": {
+        "url": "https://images.unsplash.com/photo-1528272252360-5efd274e36fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxob21lb3BhdGh5JTIwbWVkaWNpbmUlMjBib3R0bGVzfGVufDB8fHx8MTc3Mjk4MDM2M3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Homeopathy Bottles",
+        "usage": "Category Card: Homeopathy"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, Color #2F5C3E"
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Follow the 'Herbal Clinical' theme strictly. No neon greens.",
+      "Use 'Manrope' (via Google Fonts or local) for Headings. If not available, use system sans-serif but bold.",
+      "Ensure all images have 'alt' tags for accessibility.",
+      "Use 'lucide-react' for icons.",
+      "Implement the 'Bento Grid' for the category section on the homepage."
+    ],
+    "components": [
+      "Do NOT use default Shadcn buttons. Override with the rounded-full styles defined in 'components.buttons'.",
+      "Customize the Shadcn 'Card' to remove the heavy border and add a soft shadow.",
+      "Search Bar must be prominent (Healthmug style) in the Hero section."
+    ],
+    "pages": {
+      "homepage": "Hero with Search + Trust Signals -> Shop by Concern (Circle Grid) -> Shop by System (Bento) -> Featured Products -> Doctor CTA.",
+      "product_listing": "Sidebar Filter (Sticky) + Grid of Products. Clean, no clutter.",
+      "doctor_profile": "Clean profile header, available slots as pill buttons, reviews section."
+    },
+    "animations": {
+      "library": "framer-motion",
+      "rules": "Use gentle fade-ins (opacity: 0 -> 1, y: 10 -> 0) for sections. No aggressive bouncing."
+    }
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles like pill-shaped.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable."
+  ]
+}
